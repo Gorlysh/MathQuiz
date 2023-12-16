@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:columnCount="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/num1"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="101dp"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/one"
+                android:text="@string/one"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/num2"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/two"
+                android:text="@string/two"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/num3"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/three"
+                android:text="@string/three"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/num4"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/four"
+                android:text="@string/four"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/num5"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/five"
+                android:text="@string/five"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/num6"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/six"
+                android:text="@string/six"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/num7"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/seven"
+                android:text="@string/seven"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/num8"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/eight"
+                android:text="@string/eight"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/num9"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/nine"
+                android:text="@string/nine"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clear"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:tag="clear"
+                android:text="@string/clear"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/num0"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:onClick="setValue"
+                android:tag="@string/defaultNum"
+                android:text="@string/defaultNum"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/enter"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@drawable/ripple_effect"
+                android:elevation="24dp"
+                android:tag="enter"
+                android:text="@string/submit"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>

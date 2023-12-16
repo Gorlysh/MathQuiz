@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="10dp"
+    tools:context="com.anshumantripathi.mathquizapp.QuizActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/quizToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:background="?attr/colorPrimary"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/quizToolbar"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:weightSum="2">
+
+        <fragment
+            android:id="@+id/questionFragment"
+            android:name="com.anshumantripathi.mathquizapp.QuestionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.anshumantripathi.mathquizapp.QuestionFragment"
+            android:layout_weight="1">
+        </fragment>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.anshumantripathi.mathquizapp.KeypadFragment"
+            android:id="@+id/keypadFragment"
+            class="com.anshumantripathi.mathquizapp.KeypadFragment"
+            android:layout_weight="1">
+        </fragment>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MathQuizApp</string>
+    <string name="submit">ENTER</string>
+    <string name="home">Math Quiz</string>
+    <string name="defaultNum">0</string>
+    <string name="timeLeft">Time Left</string>
+    <string name="line">---------------</string>
+    <string name="clear">clear</string>
+    <string name="exit">EXIT</string>
+    <string name="addQuiz">Addition Quiz</string>
+    <string name="subQuiz">Subtraction Quiz</string>
+    <string name="mulQuiz">Multiplication Quiz</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="plus">+</string>
+</resources>
